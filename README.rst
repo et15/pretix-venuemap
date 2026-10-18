@@ -5,6 +5,20 @@ This is a plugin for `pretix`_.
 
 Shows a map of the event location using the tile server
 
+It uses the tile server and attribution configured in the global pretix settings
+(*Leaflet tiles URL pattern* / *Leaflet tiles attribution*), i.e. the same ones the
+backend uses for the geo coordinates map. No additional configuration of the
+Content-Security-Policy is needed, since pretix already allows the tile host.
+
+The map is shown next to the event location on the shop page if
+
+* the plugin is enabled for the event,
+* a tile server is configured globally,
+* the event (or selected date of a series) has a location and geo coordinates.
+
+Per event, zoom level and position (beside/below the event information) can be set
+under *Venue map* in the event settings.
+
 Development setup
 -----------------
 
