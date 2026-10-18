@@ -1,12 +1,50 @@
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-07 19:01+0100\n"
-"PO-Revision-Date: \n"
+"Project-Id-Version: pretix-venuemap\n"
 "Last-Translator: ET15\n"
-"Language-Team: \n"
-"Language: de\n"
+"Language: de_Informal\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: pretix_venuemap/apps.py
+msgid "Shows a map of the event location using the tile server"
+msgstr ""
+"Zeigt mithilfe des Kachelservers eine Karte des Veranstaltungsorts an."
+
+#: pretix_venuemap/forms.py
+msgid "Zoom level"
+msgstr "Zoomstufe"
+
+#: pretix_venuemap/forms.py
+msgid "Higher values zoom in further (1 = world, 18 = single building)."
+msgstr "Höhere Werte zoomen weiter hinein (1 = Welt, 18 = einzelnes Gebäude)."
+
+#: pretix_venuemap/forms.py
+msgid "Next to the event information"
+msgstr "Neben den Veranstaltungsinformationen"
+
+#: pretix_venuemap/forms.py
+msgid "Below the event information"
+msgstr "Unter den Veranstaltungsinformationen"
+
+#: pretix_venuemap/apps.py pretix_venuemap/signals.py
+#: pretix_venuemap/templates/pretix_venuemap/settings.html
+msgid "Venue map"
+msgstr "Veranstaltungsort-Karte"
+
+#: pretix_venuemap/templates/pretix_venuemap/front_page.html
+msgid "Map of the event location"
+msgstr "Karte des Veranstaltungsorts"
+
+#: pretix_venuemap/templates/pretix_venuemap/settings.html
+msgid ""
+"A map is shown next to the event location on the shop page if the event (or "
+"date) has a location and geo coordinates. It uses the tile server configured"
+" in the global settings."
+msgstr ""
+"Auf der Shop-Seite wird neben dem Veranstaltungsort eine Karte angezeigt, "
+"wenn die Veranstaltung (oder der Termin) einen Ort und Geo-Koordinaten hat. "
+"Dafür wird der Kachelserver aus den globalen Einstellungen verwendet."
