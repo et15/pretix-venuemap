@@ -1,0 +1,24 @@
+{% extends "pretixcontrol/event/settings_base.html" %}
+{% load i18n %}
+{% load bootstrap3 %}
+{% block title %}{% trans "Venue map" %}{% endblock %}
+{% block inside %}
+    <h1>{% trans "Venue map" %}</h1>
+    <p>
+        {% blocktrans trimmed %}
+            A map is shown next to the event location on the shop page if the event (or date) has a
+            location and geo coordinates. It uses the tile server configured in the global settings.
+        {% endblocktrans %}
+    </p>
+    <form action="" method="post" class="form-horizontal">
+        {% csrf_token %}
+        {% bootstrap_form_errors form %}
+        {% bootstrap_field form.venuemap_zoom layout="control" %}
+        {% bootstrap_field form.venuemap_layout layout="control" %}
+        <div class="submit-group">
+            <button type="submit" class="btn btn-primary btn-save">
+                {% trans "Save" %}
+            </button>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,31 @@
+.venuemap {
+  margin: 0 0 15px;
+
+  .venuemap-canvas {
+    height: 250px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    z-index: 0;
+  }
+
+  .leaflet-container {
+    font-family: inherit;
+  }
+}
+
+.venuemap-host {
+  display: flow-root;
+}
+
+@media (min-width: 768px) {
+  .venuemap-beside.venuemap-moved {
+    float: right;
+    // The shop's .info-row is position: relative and spans the full width, so
+    // it would paint over the floated map and swallow its clicks and cursor.
+    position: relative;
+    z-index: 1;
+    width: 40%;
+    margin: 0 0 15px 20px;
+  }
+}

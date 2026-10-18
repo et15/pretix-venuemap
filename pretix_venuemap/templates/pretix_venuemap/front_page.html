@@ -1,0 +1,15 @@
+{% load i18n %}
+{% load static %}
+<div class="venuemap venuemap-{{ layout }}"
+     role="region"
+     aria-label="{% trans "Map of the event location" %}"
+     data-tiles="{{ tiles }}"
+     data-attrib="{{ attribution }}"
+     data-lat="{{ lat|stringformat:"f" }}"
+     data-lon="{{ lon|stringformat:"f" }}"
+     data-zoom="{{ zoom }}"
+     data-title="{{ location }}"
+     data-icon="{% static "leaflet/images/marker-icon.png" %}"
+     data-shadow="{% static "leaflet/images/marker-shadow.png" %}">
+    <div class="venuemap-canvas"></div>
+</div>

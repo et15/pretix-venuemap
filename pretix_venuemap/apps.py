@@ -18,7 +18,9 @@ class PluginApp(PluginConfig):
     class PretixPluginMeta:
         name = gettext_lazy("Venue map")
         author = "ET15"
-        description = gettext_lazy("Shows a map of the event location using the tile server")
+        description = gettext_lazy(
+            "Shows a map of the event location using the tile server"
+        )
         visible = True
         version = __version__
         category = "FEATURE"

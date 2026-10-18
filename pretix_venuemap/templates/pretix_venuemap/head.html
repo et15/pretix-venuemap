@@ -1,0 +1,8 @@
+{% load static %}
+{% load compress %}
+{% compress css file venuemap %}
+    <link rel="stylesheet" type="text/x-scss" href="{% static "leaflet/leaflet.scss" %}"/>
+    <link rel="stylesheet" type="text/x-scss" href="{% static "pretix_venuemap/map.scss" %}"/>
+{% endcompress %}
+<script src="{% static "leaflet/leaflet.js" %}" defer></script>
+<script src="{% static "pretix_venuemap/map.js" %}" defer></script>
