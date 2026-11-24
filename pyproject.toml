@@ -54,7 +54,7 @@ test = [
     "pytest",
     "pytest-django",
     "coverage",
-    "pretix @ git+https://github.com/pretix/pretix.git@master",
+    "pretix",
 ]
 
 [tool.ruff]
