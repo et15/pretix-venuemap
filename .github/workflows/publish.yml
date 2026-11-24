@@ -12,8 +12,12 @@ jobs:
     permissions:
       id-token: write  # Trusted Publishing, no API token needed
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v5
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v7
+        with:
+          # No uv cache in the release workflow: it would never speed things
+          # up much and a restored cache could slip into a published build.
+          enable-cache: false
       - name: Install system dependencies
         run: sudo apt update && sudo apt install gettext
       - name: Build package
